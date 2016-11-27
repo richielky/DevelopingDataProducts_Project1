@@ -1,0 +1,150 @@
+---
+title: "Korean Sightseeing"
+author: "Richie Liew"
+date: "Nov 13, 2016"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r global_options, include=FALSE}
+knitr::opts_chunk$set(fig.width=10, fig.height=6, fig.path='Figures2/', echo=FALSE, warning=FALSE, message=FALSE)
+```
+
+```{r}
+library(leaflet)
+```
+
+### Have Fun in South Korea
+Here are a list of 10 places of interest if you are visiting South Korea:
+
+1. [Gyeongbokgung Palace](#gyeongbokgung-palace)
+2. [Bukhansan National Park](#bukhansan-national-park)
+3. [Changdeokgung Palace](#changdeokgung-palace)
+4. [Myeongdong Shopping Street](#myeongdong-shopping-street)
+5. [N Seoul Tower](#n-seoul-tower)
+6. [Hangang Park](#hangang-park)
+7. [National Museum of Korea](#national-museum-of-korea)
+8. [Nami Island](#nami-island)
+9. [Silk Fall Jiri Mountain](#silk-fall-jiri-mountain)
+10. [Kwanghan Pavilion](#kwanghan-pavilion)
+
+### Gyeongbokgung Palace
+```{r}
+# Gyeongbokgung Palace
+# 161 Sajik-ro, Sejongno, Jongno-gu, Seoul, South Korea
+m <- leaflet() %>%
+  addTiles() %>%  
+  addMarkers(lng=126.976684, lat=37.577362, popup="Gyeongbokgung Palace")
+m  # Print the map
+```
+[TOP](#have-fun-in-south-korea)
+
+### Bukhansan National Park
+```{r}
+# Bukhansan National Park
+# 262 Bogukmun-ro, Hyoja-dong, Seongbuk-gu, 서울특별시 South Korea
+m <- leaflet() %>%
+  addTiles() %>%  
+  addMarkers(lng=126.83202, lat=37.65836, popup="Bukhansan National Park")
+m  # Print the map
+```
+[TOP](#have-fun-in-south-korea)
+
+### Changdeokgung Palace
+```{r}
+# Changdeokgung Palace
+# 99, Yulgok-ro, Jongno-gu, Seoul 03072, South Korea
+m <- leaflet() %>%
+  addTiles() %>%  
+  # Specify coordinates for Damascus
+  addMarkers(lng=126.976684, lat=37.577362, popup="Changdeokgung Palace")
+m  # Print the map
+```
+[TOP](#have-fun-in-south-korea)
+
+### Myeongdong Shopping Street
+```{r}
+# Myeongdong Shopping Street
+# Myeong-dong, Jung-gu, Seoul, South Korea
+m <- leaflet() %>%
+  addTiles() %>%  
+  # Specify coordinates for Damascus
+  addMarkers(lng=126.98583, lat=37.55998, popup="Myeongdong Shopping Street")
+m  # Print the map
+```
+[TOP](#have-fun-in-south-korea)
+
+### N Seoul Tower
+```{r}
+# N Seoul Tower
+# 105, Namsangongwon-gil, Yongsan-gu, Seoul, South Korea
+m <- leaflet() %>%
+  addTiles() %>%  
+  # Specify coordinates for Damascus
+  addMarkers(lng=126.989297, lat=37.550947, popup="N Seoul Tower")
+m  # Print the map
+```
+[TOP](#have-fun-in-south-korea)
+
+### Hangang Park
+```{r}
+# Hangang Park
+# Nodeul-ro, Dangsan 2(i)-dong, Yeongdeungpo-gu, Seoul, South Korea
+m <- leaflet() %>%
+  addTiles() %>%  
+  # Specify coordinates for Damascus
+  addMarkers(lng=126.889842, lat=37.545629, popup="Hangang Park")
+m  # Print the map
+```
+[TOP](#have-fun-in-south-korea)
+
+### National Museum of Korea
+```{r}
+# National Museum of Korea
+# 137 Seobinggo-ro, Yongsan-gu, Seoul 04383, South Korea
+m <- leaflet() %>%
+  addTiles() %>%  
+  # Specify coordinates for Damascus
+  addMarkers(lng=126.994917, lat=37.520596, popup="National Museum of Korea")
+m  # Print the map
+```
+[TOP](#have-fun-in-south-korea)
+
+### Nami Island
+```{r}
+# Nami Island (남이섬)
+# 1 Namisum-gil, Namsan-myeon, Chuncheon, Gangwon-do, South Korea
+m <- leaflet() %>%
+  addTiles() %>%  
+  # Specify coordinates for Damascus
+  addMarkers(lng=127.525807, lat=37.789935, popup="Nami Island (남이섬)")
+m  # Print the map
+```
+[TOP](#have-fun-in-south-korea)
+
+### Silk Fall Jiri Mountain
+```{r}
+# Silk Fall, Jiri Mountain (지리산 뱀사골 실비단폭포)# 
+# 320-2, Jirisan-daero, Sancheong-gun, Gyeongsangnam-do
+m <- leaflet() %>%
+  addTiles() %>%  
+  # Specify coordinates for Damascus
+  addMarkers(lng=127.817831, lat=35.243835, popup="Silk Fall, Jiri Mountain (지리산 뱀사골 실비단폭포)")
+m  # Print the map
+```
+[TOP](#have-fun-in-south-korea)
+
+### Kwanghan Pavilion
+```{r}
+# Kwanghan Pavilion
+# 137 Seobinggo-ro, Yongsan-gu, Seoul 04383, South Korea
+m <- leaflet() %>%
+  addTiles() %>%  
+  # Specify coordinates for Damascus
+  addMarkers(lng=127.378239, lat=35.403609, popup="Kwanghan Pavilion")
+m  # Print the map
+```
+[TOP](#have-fun-in-south-korea)
+
+
